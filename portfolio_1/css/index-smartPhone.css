@@ -1,0 +1,298 @@
+@media screen and (max-width: 750px){ 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 65px;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;
+        background-color: rgba(32, 32, 32, 0.685);
+        box-shadow: 0 3px 10px 2px rgba(8, 8, 8, 0.3);
+    }
+
+    #headerIcon{
+        margin: 14px 0 20px 30px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .iconLine{
+        width:35px;
+        height:2px;
+        background-color: rgba(240, 240, 240, 0.781);
+        margin-top: 8px;
+        z-index: 10;
+    }
+
+    #headerLinks{
+        display: none;
+    }
+
+    #hamHeaderLinks{
+        width:300px;
+        height: 100%;
+        background-color: rgba(15, 15, 15, 0.9);
+        box-shadow: 0 3px 10px 2px rgba(8, 8, 8, 0.3);
+        z-index: 9;
+        position: fixed;
+        top: 0;
+        left: -300px;
+    }
+
+    .hheader{
+        list-style: none;
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .hhl{
+        color: rgba(240, 240, 240, 0.781);
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: large;
+        cursor: pointer;
+    }
+    .hhl:hover{
+        color: white;
+    }
+
+
+    #mainContents{
+        width: 100%;
+    }
+
+
+    #topContents{
+        width: 100%;
+        height: 750px;
+        background-color: blanchedalmond;
+        /*
+        "../images/topBooksPhoto2.jpeg"
+        "../images/topBooksPhoto.jpeg"
+        "../images/pool3.jpeg"
+        "../images/sky1.jpeg"
+        "../images/water1.jpeg"
+        "../images/music1.jpeg"
+        */
+        background-image: url("../images/stars1.jpeg");
+        background-size: cover;
+    }
+
+    #firstMessage{
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 400px;
+    }
+
+    #introductionContents{
+        width: 100%;
+        height: 1100px;
+        background-color: white;
+    }
+
+
+    #worksContents{
+        width: 100%;
+        height: 800px;
+        background-color:black;
+    }
+
+    #productContents{
+        width: 100%;
+        height: 800px;
+        background-color: white;
+    }
+
+    #contactContents{
+        width: 100%;
+        height: 700px;
+        background-color: whitesmoke;
+
+    }
+
+    .title{
+        font-family: sans-serif;
+        margin-top: 0px;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .ic{
+        color: black;
+    }
+    .wc{
+        color: white;
+    }
+    .pc{
+        color: black;
+    }
+    .fc{
+        color: black;
+    }
+    .intr{
+        height: 400px;
+        width: 80%;
+        background-color: rgba(160, 160, 160, 0.5);
+        margin: 30px 10% 0 10%;
+        box-shadow: 0 3px 10px 0px rgba(8, 8, 8, 0.3);
+        border-radius: 8px;
+    }
+
+    #worksContainer{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 70px auto 0;
+        background-color: rgba(8, 8, 8, 0.3);
+    }
+
+    #sliderBox{
+        margin-top: 40px;
+        height: 490px;
+        overflow: hidden;
+    }
+    #sliderList{
+        display: flex;
+        list-style: none;
+
+    }
+    .slItem{
+        flex-shrink: 0;
+        width: 550px;
+        height: 420px;
+        border-radius: 5px;
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+        
+    }
+    .slItem1{
+        background-color: rgba(62, 94, 124, 0.3);
+        
+    }
+    .slItem2{
+        background-color: rgba(129, 63, 63, 0.3);
+    }
+    .slItem3{
+        background-color: rgba(61, 126, 83, 0.3);
+    }
+    .slItem4{
+        background-color: rgba(128, 63, 128, 0.3);
+    }
+    .slItem5{
+        background-color: rgba(134, 127, 64, 0.3);
+    }
+    #prev{
+        z-index: 7;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        display: none;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-left: 2px solid rgb(255, 255, 255);
+        cursor: pointer;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    #next{
+        z-index: 7;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        cursor: pointer;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .productItem{
+        float: left;
+        width: 30%;
+    }
+
+    .pii{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        background-color: rgba(15, 15, 15, 0.753);
+        margin-left: 50%;
+        transform: translateX(-75px);
+        margin-top: 150px;
+    }
+    .pi1{
+        margin-left: 5%;
+    }
+    .pi3{
+        margin-right: 5%;
+    }
+    .productItem h3{
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .productItem p{
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+
+
+
+    .contactItem{
+        height: 50px;
+        margin-left: 12%;
+        padding-top: 5px;
+    }
+
+    .ci1{
+        margin-top: 50px;
+    }
+
+    .ci{
+        float: left;
+        width: 20%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .in{
+        width: 42%;
+    }
+
+    #textMessage{
+        width: 63%;
+    }
+    label{
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    #sousin{
+        width: 250px;
+        margin-top: 200px;
+        margin-left: 50%;
+        transform: translateX(-125px);
+        padding: 8px;  
+        background-color: black;
+        color: white;
+        font: bold;  
+        border: none;
+    }
+}
